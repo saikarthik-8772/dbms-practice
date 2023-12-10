@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>portal signup</title>
+<script>
+function validateForm() {
+  let r = document.forms["signup"]["rol"].value;
+  let n = document.forms["signup"]["nam"].value;
+  let pn = document.forms["signup"]["phn"].value;
+  let d  = document.forms["signup"]["Dob"].value;
+  let a = document.forms["signup"]["address"].value;
+  let p = document.forms["signup"]["pass"].value;
+  
+    if (r == "") {
+    alert("roll no must be filled out");
+    return false;
+  }
+  else if (n == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+  else if (pn == "") {
+    alert("phn no must be filled out");
+    return false;
+  }
+  else if (d == "") {
+    alert("dob must be filled out");
+    return false;
+  }
+  else if (a == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+  else if (p == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>
+<body>
+
+<h1>Portal login</h1>
+
+<form name="signup" action="/sign" target = "_self" onsubmit="return validateForm()" method="post">
+<label for ="rol">Roll no:</label><br>
+<input type ="text" id="rol" name="rol"><br>
+<label for ="nam">Name:</label><br>
+<input type ="text" id="nam" name="nam"><br>
+<label for ="phn">Phone no:</label><br>
+<input type ="text" id="phn" name="phn"><br>
+<label for ="Dob">Date of Birth:</label><br>
+<input type ="text" id="Dob" name="Dob"><br>
+<label for ="add">Address:</label><br>
+<textarea name="address" rows="10" cols="30"></textarea><br>
+<label for="pass">Password:</label><br>
+<input type ="password" id="pass" name="pass"><br><br>
+<input type="submit" style="color:white;background-color:powderblue; border-radius:20px; border-color:powderblue;" value = "sign up">
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+

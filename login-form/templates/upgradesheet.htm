@@ -1,0 +1,30 @@
+<html>
+<script>
+    function validateForm() {
+        let r = document.forms["update"]["subA"].value;
+        let n = document.forms["update"]["subB"].value;
+         if (r == "") {
+    alert("subjectA must be filled out");
+    return false;
+  }
+  else if (n == "") {
+    alert("subjectB must be filled out");
+    return false;
+  }
+}
+
+</script>
+<body>
+
+<h1>Gradesheet</h1>
+<body>
+<form name="update" action="/update" target = "_self" onsubmit="return validateForm()" method =  "POST">
+<label for ="subA">subjectA:</label>
+<input type ="text" id="subA" name = "subA" ><br><br>
+<label for="subB">subjectB:</label>
+<input type ="text" id="subB" name ="subB"><br><br>
+<input type="submit" style="color:white;background-color:powderblue; border-radius:20px; border-color:powderblue" value = "submit">
+</form>
+
+</body>
+</html>

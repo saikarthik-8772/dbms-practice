@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+a {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:0px;
+  border-color: black;
+  text-decoration:none;
+}
+
+a{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a:after {
+  
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+</style>
+</head>
+<body style="background-color:blue;">
+<pre>
+<a href="/details" target = "rportal">profile</a>
+<a href="/upgradestatic" target = "rportal">update gradesheet</a>
+<a href="/grade" target = "rportal">gardesheet</a>
+
+<a href="/logout" target="_parent">log out</a>
+</pre>
+</body>
+</html>
