@@ -1,3 +1,5 @@
+#This is the mail file for app creation
+
 from flask import Flask,session,render_template,request,redirect,g,url_for
 import mysql.connector
 
